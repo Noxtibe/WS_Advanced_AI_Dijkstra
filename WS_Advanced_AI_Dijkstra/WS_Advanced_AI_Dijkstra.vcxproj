@@ -127,11 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Dijkstra.cpp" />
     <ClCompile Include="WS_Advanced_AI_Dijkstra.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Dijkstra.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

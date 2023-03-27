@@ -18,13 +18,5 @@
     <ClCompile Include="WS_Advanced_AI_Dijkstra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Dijkstra.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Dijkstra.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
