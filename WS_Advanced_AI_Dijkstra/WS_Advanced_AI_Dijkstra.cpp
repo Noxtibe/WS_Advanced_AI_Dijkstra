@@ -1,7 +1,7 @@
 #include <iostream>
 #include "limits.h" // Needed for infinity
 
-using namespace std;
+/*using namespace std;
 
 #define size 7 // Define the size of the matrice
 
@@ -82,6 +82,6 @@ int main() {
 							 {0, 0, 0, 2, 0, 0, 0}, {0, 3, 0, 0, 0, 0, 3},
 							 {0, 0, 0, 0, 5, 3, 0} };
 	dijkstra(graph, 0);
-}
+}*/
 
 
