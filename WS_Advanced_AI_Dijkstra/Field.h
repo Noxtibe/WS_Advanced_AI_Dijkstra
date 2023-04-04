@@ -15,12 +15,22 @@ public :
 	Field();
 	~Field();
 
+	void Step();
 	void Reset();
+
+	bool IsCompleted() const;
+	bool GetRows() const;
+	bool GetColumns() const;
+	const std::vector<Nodes*>& GetShortestPathNodes() const;
 
 private :
 
 	void ClearData();
 	void ParseInputFile();
+	void OnCompleted();
+
+	std::vector<Nodes*> GetNeighbourNodes(Nodes* currentNode);
+	int GetDistanceBetweenNodes(const Nodes* n1, const Nodes* n2) const;
 
 public :
 
@@ -30,8 +40,15 @@ public :
 	int _columns;
 	FieldType _nodes;
 
-	Nodes* _startNodes;
-	Nodes* _targetNodes;
+	Nodes* _startNodes = nullptr;
+	Nodes* _targetNodes = nullptr;
 
+	std::vector<Nodes*> _openSet;
+	std:: vector<Nodes*> _closedSet;
+	
+
+	bool _isCompleted = false;
+
+	std::vector<Nodes*> _shortestPathNodes;
 };
 
