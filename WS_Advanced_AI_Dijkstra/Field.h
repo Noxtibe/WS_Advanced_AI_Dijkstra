@@ -19,9 +19,12 @@ public :
 	void Reset();
 
 	bool IsCompleted() const;
-	bool GetRows() const;
-	bool GetColumns() const;
+	int GetRows() const;
+	int GetColumns() const;
 	const std::vector<Nodes*>& GetShortestPathNodes() const;
+	const std::vector<Nodes*>& GetOpenSet() const;
+	const std::vector<Nodes*>& GetClosedSet() const;
+	const FieldType& GetField() const;
 
 private :
 

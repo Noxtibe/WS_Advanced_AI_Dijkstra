@@ -135,6 +135,7 @@
   <ItemGroup>
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="Nodes.cpp" />
+    <ClCompile Include="SDLField.cpp" />
     <ClCompile Include="WS_Advanced_AI_AStar.cpp" />
     <ClCompile Include="WS_Advanced_AI_Dijkstra.cpp" />
   </ItemGroup>
@@ -142,9 +143,7 @@
     <ClInclude Include="Field.h" />
     <ClInclude Include="Nodes.h" />
     <ClInclude Include="resource.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="input.txt" />
+    <ClInclude Include="SDLField.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

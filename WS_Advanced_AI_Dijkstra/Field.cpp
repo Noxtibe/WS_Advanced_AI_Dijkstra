@@ -78,12 +78,12 @@ bool Field::IsCompleted() const
 	return _isCompleted;
 }
 
-bool Field::GetRows() const
+int Field::GetRows() const
 {
 	return _rows;
 }
 
-bool Field::GetColumns() const
+int Field::GetColumns() const
 {
 	return _columns;
 }
@@ -91,6 +91,21 @@ bool Field::GetColumns() const
 const std::vector<Nodes*>& Field::GetShortestPathNodes() const
 {
 	return _shortestPathNodes;
+}
+
+const std::vector<Nodes*>& Field::GetOpenSet() const
+{
+	return _openSet;
+}
+
+const std::vector<Nodes*>& Field::GetClosedSet() const
+{
+	return _closedSet;
+}
+
+const FieldType& Field::GetField() const
+{
+	return _nodes;
 }
 
 void Field::ClearData()
